@@ -6,15 +6,15 @@ function Update()
     currentMinute = currentTime.min
 	days = currentTime.wday - 1
 	--进行独立时间判断
-
     if ifenableindividualtime == 1 then
+        --为ClassTime数组按照独立设置赋值
         if ifenableindividualtimeMon == 1 and days == 1 then
             AssignClassTime1()
         elseif days == 1 then
             AssignClassTimeGlobal()
         end
         
-        if ifenableindividualtimeSat == 1 and days == 2 then
+        if ifenableindividualtimeTue == 1 and days == 2 then
             AssignClassTime2()
         elseif days == 2 then
             AssignClassTimeGlobal()
@@ -39,10 +39,11 @@ function Update()
         elseif days == 6 then
             AssignClassTimeGlobal()
         end
-
+        --送去判断
         return CommandOutput()
 
     else
+        --未启用独立时间则直接按全局时间赋值
         AssignClassTimeGlobal()
         return CommandOutput()
     end
@@ -53,7 +54,7 @@ function CommandOutput()
     for i, class in ipairs(classTimes) do
 	--此处判断是哪一节课 是否上课
         if currentHour == class.h and currentMinute == class.m then 
-            return "[!ShowMeter ClassStatusMeter3][!HideMeter ClassStatusMeter2][!HideMeter ClassStatusMeter1][!ZPos -2][!WriteKeyValue Variables laststatus 0 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass ".. i-1 .." Modules\\module.recovery.inc]"
+            return "[!ShowMeter ClassStatusMeter3][!HideMeter ClassStatusMeter2][!HideMeter ClassStatusMeter1][!ZPos -2][!WriteKeyValue Variables laststatus 0 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass ".. i-1 .." Modules\\module.recovery.inc][!UnpauseMeasure TimingScript]"
         end
 		--即将上课
 		local will_hour = class.h
@@ -64,7 +65,7 @@ function CommandOutput()
             will_hour = will_hour - 1
         end
 		if currentHour == will_hour and currentMinute == will_minute then
-		    output = "[!ShowMeter ClassStatusMeter2][!HideMeter ClassStatusMeter1][!HideMeter ClassStatusMeter3][!ShowMeterGroup csbg".. i .."][!SetOption classMeter".. i .." FontColor [#onclasscolor]][!UpdateMeter ClassStatus".. i .."colorMeter][!WriteKeyValue Variables laststatus 2 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass ".. i-1 .." Modules\\module.recovery.inc]"
+		    output = "[!ShowMeter ClassStatusMeter2][!HideMeter ClassStatusMeter1][!HideMeter ClassStatusMeter3][!ShowMeterGroup csbg".. i .."][!SetOption classMeter".. i .." FontColor [#onclasscolor]][!UpdateMeter ClassStatus".. i .."colorMeter][!WriteKeyValue Variables laststatus 2 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass ".. i-1 .." Modules\\module.recovery.inc][!UnpauseMeasure TimingScript]"
             if i == 1 then
                 output = output .. "[!SetOption classMeter0 FontColor [#finishedclasscolor]]"
             end
@@ -80,8 +81,9 @@ function CommandOutput()
             end_hour = end_hour + 1
         end
 		if currentHour == end_hour and currentMinute == end_minute then
-				return "[!ShowMeter ClassStatusMeter1][!HideMeter ClassStatusMeter2][!HideMeter ClassStatusMeter3][!HideMeterGroup csbg".. i .."][!ShowMeterGroup csbg".. i+1 .."][!SetOption classMeter".. i .." FontColor [#finishedclasscolor]][!SetOption classMeter".. i+1 .." FontColor [#readyclasscolor]][!UpdateMeter ClassStatus".. i+1 .."colorMeter][!ZPos 1][!WriteKeyValue Variables laststatus 1 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass ".. i .." Modules\\module.recovery.inc]" 
+				return "[!ShowMeter ClassStatusMeter1][!HideMeter ClassStatusMeter2][!HideMeter ClassStatusMeter3][!HideMeterGroup csbg".. i .."][!ShowMeterGroup csbg".. i+1 .."][!SetOption classMeter".. i .." FontColor [#finishedclasscolor]][!SetOption classMeter".. i+1 .." FontColor [#readyclasscolor]][!UpdateMeter ClassStatus".. i+1 .."colorMeter][!ZPos 1][!WriteKeyValue Variables laststatus 1 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass ".. i .." Modules\\module.recovery.inc][!UnpauseMeasure TimingScript]" 
 	    --11.24 本来想要让下课的时候下节课的那个侧边提示条变成黄色的，失败，遂放弃以后再说
+        --3.4 现在可以了，但不想搞了zzz
 		end	
     end
 

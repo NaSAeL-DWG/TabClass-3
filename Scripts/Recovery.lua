@@ -38,6 +38,6 @@ local output = 1
 		   return "[!DisableMeasureGroup Recovery]"
 		end
 	 else
-	    return "[!DisableMeasureGroup Recovery][!WriteKeyValue Variables profiledate 0 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass -1 Modules\\module.recovery.inc][!WriteKeyValue Variables laststatus 1 Modules\\module.recovery.inc][!WriteKeyValue Variables clearrecoveryconfig 0 Options.inc]"
+	    return "[!DisableMeasureGroup Recovery][!WriteKeyValue Variables profiledate 0 Modules\\module.recovery.inc][!WriteKeyValue Variables lastclass -1 Modules\\module.recovery.inc][!WriteKeyValue Variables laststatus 1 Modules\\module.recovery.inc][!WriteKeyValue Variables clearrecoveryconfig 0 Options.inc][!Refresh]"
      end
 end

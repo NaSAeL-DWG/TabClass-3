@@ -7,14 +7,18 @@ local closeautostatus="[!DisableMeasure StatusScript][!DisableMeasure Extraevent
 function Initialize()
     ifcloseautostatus = tonumber(SKIN:GetVariable("ifcloseautostatus"))
 	ifenablerecovery = tonumber(SKIN:GetVariable("ifenablerecovery"))
+	ifenableoffomode = tonumber(SKIN:GetVariable("ifenable1441mode"))
 end
 function Update()
         output = "" 
 		if ifcloseautostatus == 1 then
-		output = output .. closeautostatus
+		output = output .. closeautostatus .. "[!DisableMeasureGroup Recovery]"
 		end
 		if ifenablerecovery == 0 then
 		output = output .. "[!DisableMeasureGroup Recovery]"
+		end
+		if ifenableoffomode == 1 then
+		output = output .. "[!HideMeter classMeter5][!SetVariable xcl -40]"
 		end
 		return output
 end
