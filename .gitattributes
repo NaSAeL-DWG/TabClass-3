@@ -1,3 +1,7 @@
 @Resources/* linguist-documentation
 Modules/* linguist-documentation
 Pimages/* linguist-documentation
+*ClassTable.inc linguist-documentation
+*ClassTime.inc linguist-documentation
+*Options.inc linguist-documentation
+*TabClass.ini linguist-documentation
