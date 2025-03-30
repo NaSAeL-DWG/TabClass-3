@@ -1,7 +1,7 @@
 local ifcloseautostatus = 3
 
 --命令组
-local closeautostatus="[!DisableMeasure StatusScript][!DisableMeasure ExtraeventsupdateMeasure][!DisableMeasure ClassstatusupdateMeasure][!SetOption TextMeter1 FontColor 127,127,127][!HideMeterGroup status][!ShowMeter TextMeter3][!ShowMeter TextMeter2][!HideMeter ClassStatusbgMeter]"
+local closeautostatus="[!DisableMeasure StatusScript][!ZPos -2][!DisableMeasure ExtraeventsupdateMeasure][!DisableMeasure ClassstatusupdateMeasure][!SetOption TextMeter1 FontColor 127,127,127][!HideMeterGroup status][!ShowMeter TextMeter3][!ShowMeter TextMeter2][!HideMeter ClassStatusbgMeter]"
 
 
 function Initialize()
