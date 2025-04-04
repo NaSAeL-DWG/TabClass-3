@@ -3,7 +3,7 @@
 [Variables]
 profiledate=89
 laststatus=0
-lastclass=0
+lastclass=7
 
 ;status 0为上课1为下课2为即将上课 lastclass为已经上了的最后一节课
 
