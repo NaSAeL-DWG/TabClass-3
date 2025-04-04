@@ -246,7 +246,7 @@ c1m=50
 
 ## 开发团队 
 程序开发：
-Dynamic Wave Group. 动力波团队 | [邮箱](mailto:inmilkcow@gmail.com)
+Dynamic Wave Group. 动力波团队 | [邮箱](mailto:inmilkcow@gmail.com) \
 美术资源：
 Dynamic Creative Center 动力创意中心
 
@@ -255,6 +255,7 @@ Dynamic Creative Center 动力创意中心
 - 项目中带有的 MiSans 字体包**不属于本项目**，仅为方便用户而附带，其权利归小米科技有限责任公司所有，使用时您应遵守[《MiSans字体知识产权许可协议》](https://hyperos.mi.com/font/zh/)
 - TabClass相关图标**不包括在本项目开源许可证中**，Dynamic Wave Group.和Dynamic Creative Center保留其所有权利。
 <br>
+
 本项目使用了以下资源：
 - [Material Design Icons](https://github.com/google/material-design-icons)（Apache License 2.0）
 - [MiSans字体](https://hyperos.mi.com/font/zh/)
