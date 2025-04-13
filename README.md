@@ -72,7 +72,7 @@ TabClass 3 - 适用于班级电子白板的侧挂式自动化课程显示工具
 > 你同样可以参考 [Rainmeter官方文档](https://docs.rainmeter.net/manual/installing-rainmeter/) 来完成这一步操作
 
 > [!IMPORTANT]
-> 请确保您安装的 Rainmeter 版本号为 4.5.21 及以上
+> 请确保您安装的 Rainmeter 版本为最新版 当前适配版本：4.5.23.3836
 
 ### 1.下载Rainmeter
 
