@@ -244,6 +244,10 @@ c1m=50
 - 用记事本或其他文本编辑软件打开Options.inc文件
 详见WIKI，此处不介绍，文件中注释也有介绍。
 
+---
+## TabClass-3 Cust 现已推出
+获取为您量身定制的TabClass-3版本。我们能基于您的课表和需求为您个性化设计方案、插件，同时提供1个月的售后服务。咨询 inmilkcow@gmail.com 以获取更多信息及定价
+
 ## 开发团队 
 程序开发：
 Dynamic Wave Group. 动力波团队 | [邮箱](mailto:inmilkcow@gmail.com) \
