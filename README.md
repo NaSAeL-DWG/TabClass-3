@@ -246,11 +246,11 @@ c1m=50
 
 ---
 ## TabClass-3 Cust 现已推出
-获取为您量身定制的TabClass-3版本。我们能基于您的课表和需求为您个性化设计方案、插件，同时提供1个月的售后服务。咨询 inmilkcow@gmail.com 以获取更多信息及定价
+获取为您量身定制的TabClass-3版本。我们能基于您的课表和需求为您个性化设计方案、插件，同时提供1个月的售后服务。咨询 dynamicwavegroup@gmail.com 以获取更多信息及定价
 
 ## 开发团队 
 程序开发：
-Dynamic Wave Group. 动力波团队 | [邮箱](mailto:inmilkcow@gmail.com) \
+Dynamic Wave Group. 动力波团队 | [邮箱](mailto:dynamicwavegroup@gmail.com) \
 美术资源：
 Dynamic Creative Center 动力创意中心
 
