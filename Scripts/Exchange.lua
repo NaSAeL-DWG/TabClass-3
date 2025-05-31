@@ -13,6 +13,5 @@ function Exchangeclass(first, second)
 end
 
 function Initialize()
-    --让Rainmeter调用一下脚本
     scale = tonumber(SKIN:GetVariable("scale"))
  end

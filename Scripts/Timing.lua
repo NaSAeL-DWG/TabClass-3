@@ -5,10 +5,14 @@ function Update()
     if timep >= 60 then
         timep = 0
         print(timep)
-        return "[!UnpauseMeasure ClassstatusupdateMeasure][!PauseMeasure TimingScript]"
+        SKIN:Bang('[!UnpauseMeasure ClassstatusupdateMeasure][!PauseMeasure TimingScript]')
+        return "TimingScript：60sCountdownFinished"
     else
         print(timep)
         timep = timep + 1
-        return "[!PauseMeasure ClassstatusupdateMeasure]" 
+        SKIN:Bang('[!PauseMeasure ClassstatusupdateMeasure]')
+        return "TimingScript：60sCounting"
     end
 end
+
+--5.31 #16 发现可能出现暂停失败，之后换用其他return方式
