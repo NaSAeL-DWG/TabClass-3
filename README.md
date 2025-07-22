@@ -13,6 +13,7 @@ TabClass 3 - 适用于班级电子白板的侧挂式自动化课程显示工具
 ## 该项目可能不再维护。
 ### 屎山太多了看得我头疼，通用性有点低了不好改，受不了一点
 ### 用Rainmeter做这个简直就是受罪！！！
+### 本项目自2025-07-22后改用MIT许可证，不包括TabClass相关图标。
 
 > [!TIP]
 >在开始使用前，您需要确保自己的设备中安装有 [Rainmeter](https://www.rainmeter.net/)，您也可以跟随下方教程进行安装
@@ -249,8 +250,6 @@ c1m=50
 详见WIKI，此处不介绍，文件中注释也有介绍。
 
 ---
-## TabClass-3 Cust 现已推出
-获取为您量身定制的TabClass-3版本。我们能基于您的课表和需求为您个性化设计方案、插件，同时提供1个月的售后服务。咨询 dynamicwavegroup@gmail.com 以获取更多信息及定价
 
 ## 开发团队 
 程序开发：
@@ -260,7 +259,7 @@ Dynamic Creative Center 动力创意中心
 
 Copyright Dynamic Wave Group. 2024-2025 
 ## 声明
-- 本项目使用 GPL-3.0 许可证开源
+- 本项目使用 MIT 许可证开源
 - 项目中带有的 MiSans 字体包**不属于本项目**，仅为方便用户而附带，其权利归小米科技有限责任公司所有，使用时您应遵守[《MiSans字体知识产权许可协议》](https://hyperos.mi.com/font/zh/)
 - TabClass相关图标**不包括在本项目开源许可证中**，Dynamic Wave Group.和Dynamic Creative Center保留其所有权利。
   
